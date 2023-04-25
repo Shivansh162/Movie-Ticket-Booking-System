@@ -1,0 +1,18 @@
+CREATE TABLE book (
+  m_Id INTEGER PRIMARY KEY,
+  m_name TEXT NOT NULL,
+  release_date date,
+  diector text,
+  cast varchar(70),
+  budget float,
+  duration float,
+  ratings float 
+);
+
+-- insert
+INSERT INTO book VALUES (1, 'Brahmastra',"2022-9-9","Ayan Mukherjee", "Ranbir Kapoor, Alia Bhatt", 410.0, 3.0, 3.5 );
+INSERT INTO book VALUES (2, 'John Wick 4', "2023-03-24", "Chad stahelski", "Keanu Reeves", 900, 2.49, 4);
+INSERT INTO book VALUES (3, 'Spiderman no way home', "2021-12-17", "John Watts", "Tom Holland", 500, 2.28, 4);
+
+-- fetch 
+SELECT * FROM book WHERE m_Id=1;
